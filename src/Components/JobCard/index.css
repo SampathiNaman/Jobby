@@ -1,0 +1,45 @@
+.job-card {
+  color: #ffffff;
+  background-color: #272727;
+  border: none;
+  border-radius: 16px;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .job-card {
+    padding: 30px 20px;
+  }
+}
+
+.job-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.job-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.start-icon {
+  color: #fbbf24;
+}
+
+.job-detail {
+  color: #f1f5f9;
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.job-sub-heading {
+  font-size: 500;
+}
+
+.job-description {
+  color: #f1f5f9;
+  font-size: 12px;
+}

@@ -1,0 +1,75 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-container {
+    min-width: 28%;
+    margin-top: 0px;
+  }
+}
+
+.profile-container {
+  min-height: 160px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  border: none;
+  border-radius: 26px 26px 16px 16px;
+  padding: 20px;
+}
+
+.retry-btn-container {
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+}
+
+.profile-name {
+  color: #4f46e5;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.profile-bio {
+  color: #2c364c;
+  font-size: 12px;
+}
+
+.separator {
+  background-color: #f1f5f9;
+  height: 2px;
+  border: none;
+}
+
+.filter-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-options-container {
+  padding-left: 0px;
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+.filter-option-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.option {
+  color: #f8fafc;
+  font-size: 12px;
+}

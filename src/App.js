@@ -1,4 +1,4 @@
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 
 import Login from './Components/Login'
 import Home from './Components/Home'
@@ -14,15 +14,13 @@ import './App.css'
 // Replace your code here
 const App = () => (
   <div className="app-container">
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/login" component={Login} />
-        <ProtectedRoute exact path="/" component={Home} />
-        <ProtectedRoute exact path="/jobs" component={Jobs} />
-        <ProtectedRoute exact path="/jobs/:id" component={JobItem} />
-        <Route component={NotFound} />
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      <Route exact path="/login" component={Login} />
+      <ProtectedRoute exact path="/" component={Home} />
+      <ProtectedRoute exact path="/jobs" component={Jobs} />
+      <ProtectedRoute exact path="/jobs/:id" component={JobItem} />
+      <Route component={NotFound} />
+    </Switch>
   </div>
 )
 
